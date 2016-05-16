@@ -1,0 +1,825 @@
+SHEET:
+/ name width height originX originY
+sht_body 32 32 13 32
+sht_armor 32 32 13 32
+sht_hair 32 32 13 32
+sht_weapon 32 32 3 28
+sht_projectile 10 5 5 3
+sht_tile 40 40 0 0
+sht_armorLegs 32 32 13 32
+sht_armorArms 32 32 13 32
+sht_leafPattern 400 400 0 0
+sht_cavePattern 800 600 0 0
+sht_fragment 10 10 5 5
+/
+/
+SOUND:
+snd_attack
+snd_register
+snd_select
+snd_pick
+snd_hit
+snd_tele
+snd_anguish
+snd_undaunted
+snd_vortex
+/
+/
+COLOR:
+/ name code alpha
+clr_black 0x000000 100
+clr_reddishBlack 0x110000 100
+clr_greenishBlack 0x001100 100
+clr_blueishBlack 0x000011 100
+clr_iron 0x898999 100
+clr_steel 0xA3A3CC 100
+clr_sunSteel 0xC3C3DD 100
+clr_bronze 0x995F26 100
+clr_cloth 0xAAAA99 100
+clr_fur 0x725746 100
+clr_blackLeather 0x3F3733 100
+clr_whiteLeather 0xBFB5AF 100
+clr_greenLeather 0x83BC7E 100
+clr_brick 0xBB9999 100
+clr_blueBrick 0x9999BB 100
+clr_stone 0xA2A2A2 100
+clr_dustStone 0xA58E59 100
+clr_dustStoneLight 0xB59A61 100
+clr_carpet 0xBB5555 100
+clr_dirt 0xBB9955 100
+clr_greenery 0x55BB55 100
+clr_greeneryDark 0x459645 100
+clr_wood 0x997026 100
+clr_woodDark 0x72531C 100
+clr_magic 0x3355FF 100
+clr_fragile 0xBB55BB 100
+clr_water 0x4444BB 100
+clr_blood 0xFF3333 100
+clr_goblinBlood 0xCC3366 100
+clr_slime 0x55AA55 100
+clr_snake 0x1D8739 100
+clr_smoke 0x5F5F5F 100
+/ body colors
+clr_humanSkinS 0xFFF4ED 100
+clr_humanSkin1 0xF3E1D0 100
+clr_humanSkin2 0xD6AF9B 100
+clr_humanSkinE 0xA9725B 100
+clr_humanHairS 0xCA4F4F 100
+clr_humanHair1 0x4FCA4F 100
+clr_humanHair2 0x4F4FCA 100
+clr_humanHairE 0x9C9C4F 100
+clr_goblinSkinS 0x85E2C2 100
+clr_goblinSkin* 0x52B781 100
+clr_goblinSkinE 0x64C1A7 100
+clr_boneS 0xFFE9B9 100
+clr_boneE 0xFBEEDD 100
+clr_rottenFleshS 0x6ACE61 100
+clr_rottenFleshE 0x61A55B 100
+clr_ghost 0x3388CC 30
+/
+/
+ARMOR:
+/ name appearance color defense speedPenalty legAppearance cost armAppearance fName
+/ t1: 5
+arm_formalClothes 0 clr_blackLeather 0 0 0 10 0 @a_generic
+arm_casualClothes 1 clr_cloth 0 0 0 10 none @a_generic
+arm_banditArmor1 2 clr_fur 5 0 0 10 2 @a_generic
+arm_invisibleArmor1 none 0 5 0 none 10 none @a_generic
+arm_zombieBody1 6 clr_rottenFleshS 8 0 1 10 3 @a_generic
+arm_fenceArmor 0 clr_blackLeather 0 0 0 10 none @a_generic
+arm_smithArmor 4 clr_whiteLeather 0 0 0 10 2 @a_generic
+arm_tinkerArmor 4 clr_greenLeather 0 0 0 10 2 @a_generic
+arm_prostArmor 1 clr_greenLeather 0 0 0 10 none @a_generic
+arm_tutorClothes 11 clr_blackLeather 0 0 0 10 0 @a_generic
+arm_healerClothes 11 clr_whiteLeather 0 0 0 10 0 @a_generic
+arm_goblinArmor1 9 clr_bronze 3 0 none 10 none @a_generic
+arm_heavy1 3 clr_iron 8 20 0 180 1 @a_heavy1
+arm_light1 8 clr_fur 5 0 0 100 5 @a_light1
+/ t2: 7
+arm_heavy2 3 clr_steel 11 20 0 350 1 @a_heavy2
+arm_light2 8 clr_whiteLeather 7 0 0 200 5 @a_light2
+arm_banditArmor2 2 clr_greenLeather 7 0 0 10 2 @a_generic
+arm_invisibleArmor2 none 0 7 0 none 10 none @a_generic
+arm_zombieBody2 6 clr_rottenFleshE 11 0 1 10 3 @a_generic
+arm_goblinArmor2 9 clr_blackLeather 5 0 none 10 none @a_generic
+/ t3: 9
+arm_heavy3 7 clr_steel 15 20 0 500 4 @a_heavy3
+arm_light3 5 clr_blackLeather 9 0 0 300 none @a_light3
+arm_banditArmor3 2 clr_blackLeather 9 0 0 10 2 @a_generic
+arm_blackArmor 7 clr_blackLeather 15 0 0 10 4 @a_generic
+arm_goblinRobe 10 clr_cloth 8 0 none 10 none @a_generic
+arm_goblinKingRobe 12 clr_magic 8 0 none 10 none @a_generic
+arm_wizardRobe 13 clr_magic 8 0 2 10 5 @a_generic
+arm_grandWizardRobe 13 clr_blood 10 0 2 10 5 @a_generic
+/
+/
+WEAPON:
+/ name appearance color ranged cooldown speed baseDamage moralePercent projectileNum cost tinkerWeapon fName
+/ weapon dps = 100 * damage / cooldown
+/ tier		27/75 % weapon dps		50 % weapon dps			cost mult
+/ t1		100						130						1
+wp_sword1 0 clr_iron false 40 450 40 25 none 100 false @w_sword1
+wp_dagger1 2 clr_iron false 40 500 50 75 none 60 false @w_dagger1
+wp_axe1 5 clr_iron false 50 400 60 50 none 100 false @w_axe1
+wp_xbow1 1 clr_iron true 60 600 60 20 0 120 false @w_xbow1
+wp_bow1 3 clr_iron true 50 550 65 50 0 80 false @w_bow1
+wp_throwingStone none clr_iron true 40 350 35 80 1 40 false @w_stone
+wp_hammer 4 clr_iron false 80 350 80 50 none 100 false @w_generic
+wp_monster1 none 0 false 90 400 117 60 none 10 false @w_generic
+wp_goblinClub1 10 clr_bronze false 50 430 45 65 none 10 false @w_generic
+wp_goblinSpear1 11 clr_bronze false 60 550 55 35 none 10 false @w_generic
+wp_slime1 none 0 false 160 450 100 80 none 10 false @w_generic
+/ t2		120						155						2
+wp_sword2 0 clr_steel false 40 450 50 25 none 200 false @w_sword2
+wp_dagger2 2 clr_steel false 40 500 60 75 none 120 false @w_dagger2
+wp_axe2 5 clr_steel false 50 400 70 50 none 200 false @w_axe2
+wp_xbow2 1 clr_steel true 60 600 70 20 0 240 false @w_xbow2
+wp_bow2 3 clr_steel true 50 550 80 50 0 160 false @w_bow2
+wp_throwingKnife none clr_steel true 45 400 54 75 2 120 false @w_knife
+wp_vibroDagger 6 clr_bronze false 40 450 35 100 none 220 true @w_vibro
+wp_chainAxe 7 clr_bronze false 60 400 55 0 none 220 true @w_chain
+wp_goblinClub2 10 clr_blackLeather false 50 430 55 65 none 10 false @w_generic
+wp_goblinSpear2 11 clr_blackLeather false 60 550 65 35 none 10 false @w_generic
+wp_goblinJavelin none clr_blackLeather true 80 450 90 25 5 10 false @w_generic
+wp_monster2 none 0 false 90 400 140 60 none 10 false @w_generic
+wp_slime2 none 0 false 160 450 100 100 none 10 false @w_generic
+wp_gatlingBlood none clr_blood true 30 150 40 50 7 10 false @w_generic
+/ t3		140						180						4
+wp_sword3 0 clr_sunSteel false 40 450 60 25 none 400 false @w_sword3
+wp_dagger3 2 clr_sunSteel false 40 500 70 75 none 240 false @w_dagger3
+wp_axe3 5 clr_sunSteel false 50 400 80 50 none 400 false @w_axe3
+wp_xbow3 1 clr_sunSteel true 60 600 85 20 0 480 false @w_xbow3
+wp_bow3 3 clr_sunSteel true 50 550 90 50 0 320 false @w_bow3
+wp_throwingDisc none clr_sunSteel true 45 350 60 80 4 240 false @w_disc
+wp_autoXbow 8 clr_bronze true 40 600 45 15 0 400 true @w_auto
+wp_bodkinBow 9 clr_bronze true 60 550 60 80 0 400 true @w_bodkin
+wp_blackSword 0 clr_blackLeather false 40 450 60 25 none 100 false @w_generic
+wp_wightMagic none clr_magic true 80 450 100 80 3 10 true @w_generic
+wp_grandWizardMagic none clr_blood true 80 400 100 50 3 10 true @w_generic
+wp_shamanMagic none clr_magic true 100 350 120 50 6 10 true @w_generic
+wp_chiefSword 0 clr_smoke false 200 500 60 25 none 400 false @w_generic
+wp_kingScepter 12 clr_slime true 50 200 60 100 3 true @w_generic
+/
+/
+RACE:
+/ name appearanceBase pSX pSY pUX pUY pDX pDY bodySize bodyHeight coloration reduced
+rce_human 0 28 -19 3 5 9 -26 10 30 clrt_human false
+rce_ghost 0 28 -19 3 5 9 -26 10 30 clrt_ghost false
+rce_skeleton 3 28 -19 3 5 9 -26 10 30 clrt_skeleton false
+rce_chest 2 0 0 0 0 0 0 15 20 clrt_human true
+rce_goblin 4 26 -16 3 2 9 -23 8 22 clrt_goblin false
+rce_slime 5 0 -15 0 -15 0 -15 15 20 clrt_slime false
+rce_bloodSlime 7 0 -20 0 -20 0 -20 15 25 clrt_bloodSlime false
+rce_snake 6 14 -17 14 -17 14 -17 6 20 clrt_snake false
+rce_gatlingSnake 6 14 -17 14 -17 14 -17 6 20 clrt_gatlingSnake false
+rce_tangler 8 28 -19 3 5 9 -26 10 30 clrt_tangler false
+/
+/
+HAIRSTYLE:
+/ name mAppear* fAppear* (1-?)
+hsty_none none none
+hsty_rough 1 1 none 2 5 1
+hsty_sparse 6 6 7 7
+hsty_helmet 4 4
+hsty_zombieArmor 8 8
+hsty_goblin 11 11 12 12 13 13
+/
+/
+COLORATION:
+/ name skinColorStart skinColorEnd hairColorStart hairColorEnd bloodColor
+clrt_human clr_humanSkinS clr_humanSkinE clr_humanHairS clr_humanHairE clr_blood
+clrt_wizard clr_humanSkinS clr_humanSkinS clr_magic clr_magic clr_blood
+clrt_ghost clr_ghost clr_ghost clr_ghost clr_ghost clr_ghost
+clrt_skeleton clr_boneS clr_boneE clr_iron clr_iron none
+clrt_goblin clr_goblinSkinS clr_goblinSkinE clr_humanHairS clr_humanHairE clr_goblinBlood
+clrt_slime clr_slime clr_slime 0 0 clr_slime
+clrt_bloodSlime clr_blood clr_blood 0 0 clr_blood
+clrt_tangler clr_slime clr_slime 0 0 clr_goblinBlood
+clrt_snake clr_snake clr_snake 0 0 clr_blood
+clrt_gatlingSnake clr_blood clr_blood 0 0 clr_blood
+/
+/
+TEMPLATE:
+/ name race baseSpeed meleeWeapon rangedWeapon armor hairStyle numPhenomes str end dex mnd cha aimPoint effectSkill
+tmp_player rce_human 170 wp_dagger1 wp_throwingStone arm_casualClothes hsty_none 2 20 20 20 20 20 100 none
+tmp_grandWizard rce_human 50 none wp_grandWizardMagic arm_grandWizardRobe hsty_none 1 10 150 30 100 150 100 efS_grandWizard
+/ bandits: high-endurance enemies
+tmp_daggerBandit rce_human 100 wp_dagger1 none arm_banditArmor1 hsty_rough 1 10 50 10 5 7 100 none
+tmp_throwingBandit rce_human 100 none wp_throwingKnife arm_banditArmor1 hsty_rough 1 10 50 10 5 7 50 none
+tmp_swordBandit rce_human 100 wp_sword2 none arm_banditArmor2 hsty_rough 2 10 50 10 5 7 120 none
+tmp_archerBandit rce_human 100 none wp_bow2 arm_banditArmor2 hsty_rough 2 10 50 10 5 7 60 none
+tmp_axeBandit rce_human 100 wp_axe2 none arm_banditArmor3 hsty_rough 1 10 50 10 5 7 100 none
+tmp_chiefBandit rce_human 50 wp_chiefSword wp_xbow3 arm_heavy3 hsty_none 1 10 200 10 10 100 20 efS_weakenArrow
+/ undead: high-morale enemies; they all have status effect immunity
+tmp_skeleton rce_skeleton 150 wp_sword1 none arm_invisibleArmor1 hsty_none 1 10 7 20 5 60 20 efS_immunity
+tmp_zombie rce_skeleton 80 wp_monster1 none arm_zombieBody1 hsty_sparse 1 25 27 5 5 80 150 efS_immunity
+tmp_archerSkeleton rce_skeleton 150 none wp_bow2 arm_invisibleArmor2 hsty_helmet 1 10 7 20 5 60 40 efS_immunity
+tmp_warriorZombie rce_skeleton 80 wp_axe2 none arm_zombieBody2 hsty_zombieArmor 1 25 27 5 5 80 150 efS_immunity
+tmp_wight rce_skeleton 120 wp_blackSword wp_wightMagic arm_blackArmor hsty_none 1 25 20 5 20 70 100 efS_immunity
+tmp_ghost rce_ghost 500 wp_monster2 wp_wightMagic arm_invisibleArmor2 hsty_none 2 10 100 10 50 200 20 efS_immunity
+/ soldiers: all uniform health/morale; individually weak but more common than other enemies
+tmp_scout rce_goblin 100 wp_goblinClub1 wp_throwingStone arm_goblinArmor1 hsty_goblin 1 3 50 3 5 50 160 none
+tmp_warrior rce_goblin 100 wp_goblinSpear1 none arm_goblinArmor1 hsty_goblin 1 3 50 3 5 50 160 none
+tmp_grunt rce_goblin 100 wp_goblinClub2 none arm_goblinArmor2 hsty_goblin 1 3 50 3 5 50 160 none
+tmp_elite rce_goblin 100 wp_goblinSpear2 wp_goblinJavelin arm_goblinArmor2 hsty_goblin 1 3 50 3 5 50 160 efS_eliteFragile
+tmp_shaman rce_goblin 100 none wp_shamanMagic arm_goblinRobe hsty_goblin 1 3 50 3 60 50 200 efS_shamanSlow
+tmp_king rce_goblin 100 none wp_kingScepter arm_goblinKingRobe hsty_goblin 1 10 150 10 100 150 10 efS_kingPoison
+/ abominations: vary between high morale and high health; tend to have special abilities
+tmp_slime rce_slime 50 wp_slime1 none arm_invisibleArmor1 hsty_none 1 15 300 5 5 20 120 none
+tmp_snake rce_snake 120 wp_monster1 none arm_invisibleArmor1 hsty_none 1 0 40 30 5 40 20 efS_snakePoison
+tmp_tangler rce_tangler 80 wp_monster2 none arm_invisibleArmor2 hsty_none 1 50 40 25 5 120 10 efS_tanglerSlow
+tmp_gatlingSnake rce_gatlingSnake 40 wp_monster2 wp_gatlingBlood arm_invisibleArmor2 hsty_none 1 0 40 30 5 40 20 efS_snakePoison
+tmp_bloodSlime rce_bloodSlime 50 wp_slime2 none arm_invisibleArmor2 hsty_none 1 15 300 5 5 20 120 none
+tmp_wizard rce_human 50 none wp_wightMagic arm_wizardRobe hsty_none 2 10 150 30 100 150 100 efS_wizard
+/
+/
+NUMPLAYERDATA:
+/ name encounterSizeMod difficultyAdd
+npd_one 100 0
+npd_two 130 0
+npd_three 160 1
+npd_four 190 1
+/
+/
+EFFECT:
+/ name data
+ef_poison frg_poisonBubble 5
+ef_slow frg_slowBubble 50
+ef_bounce none 35
+ef_knockBurst frg_smoke 80 500 30 30
+ef_headtaker frg_bloodBubble 150 40 200 30
+ef_fragile frg_fragileBubble 150
+ef_grandWizard frg_smoke 600 900 8 16 40 250
+/
+/
+EFFECTSKILL:
+/ name effect applyMelee applyRanged variable cost name
+/ player skills
+/ immunity is a special skill and has to be at position 0
+efS_immunity none false false 0 100 @s_immunity
+/ these two skills are for wizards
+efS_wizard none false false 0 10 @s_generic
+efS_grandWizard ef_grandWizard false false 0 10 @s_generic
+/ other player skills
+efS_slowArrow ef_slow false true 80 150 @s_slowArrow
+efS_poisonedBlade ef_poison true false 80 250 @s_poisonedBlade
+efS_bouncingArrow ef_bounce false true 0 250 @s_bouncingArrow
+efS_impact ef_knockBurst true false 0 150 @s_impact
+efS_adrenaline ef_headtaker true false 230 250 @s_adrenaline
+efS_weakenArrow ef_fragile false true 230 250 @s_weakenArrow 
+/ enemy skills
+efS_snakePoison ef_poison true true 130 10 @s_generic
+efS_shamanSlow ef_slow false true 80 10 @s_generic
+efS_tanglerSlow ef_slow true false 130 10 @s_generic
+efS_eliteFragile ef_fragile false true 130 10 @s_generic
+efS_kingPoison ef_poison false true 230 10 @s_generic
+/
+/
+NPCTEMPLATE:
+/ name race mockWeapon armor hairStyle hairColor phenome skinColor line startDead
+/ town npcs
+ntmp_dockmaster rce_human wp_throwingStone arm_casualClothes none 0 0 clr_humanSkinE dia_dock false
+ntmp_fence rce_human wp_dagger1 arm_fenceArmor 1 clr_humanHairE 0 clr_humanSkinS dia_fence false
+ntmp_guard rce_human wp_sword1 arm_heavy1 4 clr_iron 0 clr_humanSkin1 dia_guard false
+ntmp_smith rce_human wp_hammer arm_smithArmor 1 clr_humanHair1 1 clr_humanSkin1 dia_smith false
+ntmp_tinker rce_human wp_throwingStone arm_tinkerArmor 5 clr_humanHairS 0 clr_humanSkinS dia_tinker false
+ntmp_barOwner rce_human wp_throwingStone arm_casualClothes 0 clr_humanHair2 1 clr_humanSkinS dia_waiter false
+ntmp_mayor rce_human wp_throwingStone arm_formalClothes 9 clr_blackLeather 0 clr_humanSkinE dia_scribe false
+ntmp_prostM rce_human wp_throwingStone arm_prostArmor 1 clr_humanHairS 0 clr_humanSkin1 dia_prostM false
+ntmp_prostF rce_human wp_throwingStone arm_prostArmor 2 clr_humanHair2 1 clr_humanSkinS dia_prostF false
+ntmp_alchemist rce_human wp_throwingStone arm_healerClothes 1 clr_humanHairS 1 clr_humanSkinS dia_healer false
+ntmp_master rce_human wp_sword1 arm_formalClothes 14 clr_boneS 0 clr_humanSkinE dia_master false
+ntmp_tutor rce_human wp_throwingStone arm_tutorClothes 15 clr_blackLeather 1 clr_humanSkinE dia_tutor false
+ntmp_townFountain rce_chest wp_throwingStone none 10 clr_water 1 clr_stone none false
+/ field npcs
+ntmp_treasureChest rce_chest wp_throwingStone none 3 clr_iron 0 clr_wood dia_chest false
+ntmp_lockedChest rce_chest wp_throwingStone none 3 clr_iron 0 clr_wood dia_lockedChest false
+ntmp_medicalBox rce_chest wp_throwingStone none 3 clr_steel 0 clr_whiteLeather dia_medicalBox false
+ntmp_lostMerchant rce_human wp_sword1 arm_tutorClothes 5 clr_humanHair2 0 clr_humanSkinS dia_lostMerchant false
+ntmp_lostLady rce_human wp_throwingStone arm_formalClothes 1 clr_humanHairS 1 clr_humanSkin1 dia_lostLady false
+ntmp_goodFountain rce_chest wp_throwingStone none 10 clr_water 1 clr_stone dia_goodFount false
+ntmp_badFountain rce_chest wp_throwingStone none 10 clr_water 1 clr_stone dia_badFount false
+ntmp_corpseG rce_human wp_throwingStone arm_formalClothes 1 clr_humanHairS 0 clr_humanSkin1 dia_corpseG true
+ntmp_corpseSTR rce_human wp_throwingStone arm_heavy1 2 clr_humanHairE 0 clr_humanSkinS dia_corpseSTR true
+ntmp_corpseEND rce_human wp_throwingStone arm_casualClothes 2 clr_humanHair2 1 clr_humanSkin1 dia_corpseEND true
+ntmp_corpseDEX rce_human wp_throwingStone arm_formalClothes 1 clr_humanHairE 0 clr_humanSkinE dia_corpseDEX true
+ntmp_corpseMND rce_human wp_throwingStone arm_formalClothes 1 clr_humanHair2 0 clr_humanSkin2 dia_corpseMND true
+ntmp_corpseCHA rce_human wp_throwingStone arm_casualClothes 2 clr_humanHairS 1 clr_humanSkinS dia_corpseCHA true
+/
+/
+TILE:
+/ name appearance color solid front alternateScheme alternate
+tile_blank 0 0 true none none none
+/ town floor: keep this consistent so the town doesn't blow up
+tile_townFloorGrass 5 clr_greenery false none none none
+tile_townFloorDirt 5 clr_dirt false none none none
+tile_townBuildingWall 23 clr_wood true none none none
+tile_townBuildingTop 22 clr_wood true none none none
+tile_townWater 6 clr_water true none none none
+tile_townDock 20 clr_wood false none none none
+tile_townWall 0 clr_blueBrick true none none none
+tile_townWallTop 2 clr_blueBrick true none none none
+tile_townGate1 18 clr_blueBrick true none none none
+tile_townGate2 19 clr_blueBrick true none none none
+tile_townPath 5 clr_blueBrick false none none none
+tile_townWallDoor 21 clr_blueBrick true none none none
+tile_townBuildingDoor 24 clr_wood true none none none
+/ misc floor: this stuff can be in any order
+tile_brickFloor 1 clr_brick false none tas_surrounded tile_brickFloorAlt
+tile_brickFloorAlt 7 clr_carpet false none none none
+tile_brickTop 2 clr_brick true tile_brickWall none none
+tile_brickWall 0 clr_brick true none tas_tenpercent tile_brickWallAlt
+tile_brickWallAlt 3 clr_brick true none none none
+tile_hedgeFloor 5 clr_greenery false none tas_surroundedPermissive tile_hedgeFloor2
+tile_hedgeFloor2 5 clr_dirt false none none none
+tile_hedgeTop 6 clr_greenery true tile_hedgeWall none none
+tile_hedgeWall 4 clr_greenery true none none none
+tile_caveTop 6 clr_stone true tile_caveWall none none
+tile_caveWall 4 clr_stone true none none none
+tile_caveFloorA 5 clr_stone false none tas_tenpercent tile_caveFloor2
+tile_caveFloorB 5 clr_stone false none tas_tenpercent tile_caveFloor2
+tile_caveFloor2 8 clr_stone false none none none
+tile_treeTop 12 clr_wood true tile_treeWall none none
+tile_treeTop2 12 clr_woodDark true tile_treeWall none none
+tile_treeWall 13 clr_wood true none none none
+tile_treeWall2 13 clr_woodDark true none none none
+tile_treeFloor 5 clr_greenery false none tas_tenpercent tile_treeFloor2
+tile_treeFloor2 5 clr_greeneryDark false none tas_tenpercent tile_treeFloor
+tile_wasteTop 6 clr_dustStone true tile_wasteWall none none
+tile_wasteWall 17 clr_dustStone true none none none
+tile_wasteFloorA 5 clr_dustStone false none tas_fiftypercent tile_wasteFloorPath
+tile_wasteFloorB 5 clr_dustStone false none tas_fiftypercent tile_wasteFloorPath
+tile_wasteFloorPath 5 clr_dustStoneLight false none none none
+/
+/
+FRAGMENT:
+/ name numberMin numberMax color speed zSpeed zAccel
+frg_barrierSmoke 9 11 clr_blood 50 -10 -300
+frg_smoke 9 11 clr_smoke 50 -10 -300
+frg_wood 4 7 clr_wood 125 200 400
+frg_dustStone 0 3 clr_dustStone 100 200 480
+frg_stone 0 3 clr_stone 100 200 500
+frg_poisonBubble 8 8 clr_slime 50 -10 -300
+frg_slowBubble 8 8 clr_magic 50 -10 -300
+frg_bloodBubble 8 8 clr_blood 50 -10 -300
+frg_fragileBubble 8 8 clr_fragile 50 -10 -300
+/
+/
+ABOVETILE:
+/ name appearance color solid nearWall fragment minCluster maxCluster
+aTile_barrierOff 9 clr_magic false none none 1 1
+aTile_barrierOn 9 clr_blood true none none 1 1
+aTile_barrierBurned 9 clr_smoke false none none 1 1
+/ furniture
+aTile_barrel 10 clr_iron true true frg_wood 1 6
+aTile_pillar 11 clr_stone true false frg_stone 1 1
+aTile_tallGrass 14 clr_greenery false false none 9 15
+aTile_caveBoulder 15 clr_stone true false frg_stone 1 1
+aTile_wasteBoulder 15 clr_dustStone true false frg_dustStone 1 2
+aTile_flower 16 clr_greenery false false none 1 1
+aTile_campFire 25 clr_stone true false frg_wood 1 1
+aTile_table 26 clr_wood true false frg_wood 1 1
+aTile_chair 27 clr_wood true false frg_wood 1 1
+aTile_stalact 28 clr_stone true false frg_stone 1 2
+/
+/
+TILEALTERNATESCHEME:
+/ name
+tas_fiftypercent
+tas_evenX
+tas_surrounded
+tas_surroundedPermissive
+tas_tenpercent
+/
+/
+LEVELBUNDLE:
+/ name tileset namePrefix enemySet
+lb_f1 tlst_forest @n_fP1 eset_bandits
+lb_f2 tlst_forest @n_fP2 eset_soldiers
+lb_d1 tlst_cave @n_dP1 eset_undead
+lb_d2 tlst_cave @n_dP2 eset_abom
+lb_c1 tlst_castle @n_cP1 eset_soldiers
+lb_c2 tlst_castle @n_cP2 eset_undead
+lb_w1 tlst_waste @n_wP1 eset_abom
+lb_w2 tlst_waste @n_wP2 eset_bandits
+/
+/
+LIGHTPATTERN:
+/ name sprite alpha color driftX driftY paralX paralY
+lptn_dust sht_leafPattern 20 clr_dustStone 10000 100 0 0
+lptn_dustFast sht_leafPattern 30 clr_dustStoneLight 30000 000 0 0
+lptn_leaf sht_leafPattern 30 clr_black 160 -1000 80 80
+lptn_leafDark sht_leafPattern 80 clr_greenishBlack 40 -300 50 50
+lptn_cloud sht_leafPattern 15 clr_blueishBlack 200 -1200 20 20
+lptn_cave sht_cavePattern 90 clr_black 0 0 0 0
+lptn_caveDark sht_cavePattern 100 clr_reddishBlack 0 0 0 0
+/
+/
+TILESET:
+/ name top1 top2 floor1 floor2 wall1 wall2 smooths brushMin brushMax size pathLength sidePassages sidePassageLengthMin sidePassageLengthMax enemyInterval events furniture1 furnitureNum nameP1S nameP1E nameP2S nameP2E lightPattern
+/ remember to balance the variables carefully
+/ high brush size, high size, and high pathlength will make a map that's too big
+/ low brush size and low enemy interval will make a map with the enemies too clustered
+/ and so on and so forth
+tlst_waste tile_wasteTop tile_wasteTop tile_wasteFloorA tile_wasteFloorB tile_wasteWall tile_wasteWall 1 5 6 40 32 10 1 3 4 lst_wastelandEvents lst_wastelandFurniture1 20 @n_w1S @n_w1E @n_w2S @n_w2E lptn_dust
+tlst_cave tile_caveTop tile_caveTop tile_caveFloorA tile_caveFloorB tile_caveWall tile_caveWall 1 5 9 35 25 12 1 2 4 lst_caveEvents lst_caveFurniture1 18 @n_d1S @n_d1E @n_d2S @n_d2E lptn_cave
+tlst_castle tile_hedgeTop tile_brickTop tile_hedgeFloor tile_brickFloor tile_hedgeWall tile_brickWall 0 6 7 30 23 10 2 3 3 lst_castleEvents lst_castleFurniture1 25 @n_c1S @n_c1E @n_c2S @n_c2E lptn_cloud
+tlst_forest tile_treeTop tile_treeTop2 tile_treeFloor tile_treeFloor2 tile_treeWall tile_treeWall2 1 6 10 30 20 15 1 5 3 lst_forestEvents lst_forestFurniture1 20 @n_f1S @n_f1E @n_f2S @n_f2E lptn_leaf
+/
+/
+ENEMYSET:
+/ name minPer maxPer boss en* (1-5)
+/ note that enemy sets are ordered in increasing order of enemy difficulty
+eset_final 2 2 tmp_grandWizard tmp_slime tmp_skeleton tmp_skeleton tmp_archerSkeleton tmp_archerSkeleton
+eset_abom 1 2 tmp_wizard tmp_slime tmp_snake tmp_tangler tmp_gatlingSnake tmp_bloodSlime
+eset_soldiers 2 3 tmp_king tmp_scout tmp_warrior tmp_grunt tmp_elite tmp_shaman
+eset_undead 1 2 tmp_ghost tmp_skeleton tmp_zombie tmp_archerSkeleton tmp_warriorZombie tmp_wight
+eset_bandits 1 2 tmp_chiefBandit tmp_daggerBandit tmp_throwingBandit tmp_swordBandit tmp_archerBandit tmp_axeBandit
+/
+/
+DIALOGUEVAR:
+/ name dName display
+/ things like dvar_str and dvar_health are ">=" when used as a condition of a choice result
+dvar_str @v_str true
+dvar_end @v_end true
+dvar_dex @v_dex true
+dvar_mnd @v_mnd true
+dvar_cha @v_cha true
+dvar_health @v_health true
+dvar_morale @v_morale true
+dvar_mutex @v_invalid true
+dvar_money @v_money true
+dvar_rep @v_rep true
+dvar_dontEnd @v_invalid false
+dvar_event @v_invalid false
+dvar_openShop @v_invalid false
+dvar_oneTime @v_invalid true
+dvar_weapon @v_invalid false
+dvar_mMoney @v_invalid true
+dvar_phenome @v_invalid true
+dvar_goOn @v_invalid true
+dvar_countDown @v_invalid true
+dvar_month @v_invalid true
+/
+/
+DIALOGUE:
+/ name line numChoices choice* (1-?) numEffects effectType* effectNum* (1-?) numConditions condition* conditionNum* (1-?)
+/ fixed-order dialogue
+dia_dead @d_dead 0 1 dvar_money -20 0
+dia_fled @d_fled 0 0 0
+dia_good @d_good 0 0 0
+dia_finalChance none 0 1 dvar_goOn op_finalChance 0
+dia_intro1 @d_intro1 2 op_intro1 op_intro4 0 0
+dia_intro2 @d_intro2 2 op_intro2 op_intro4 0 0
+dia_intro3 @d_intro3 2 op_intro3 op_intro4 0 0
+dia_intro4 @d_intro4 0 1 dvar_dontEnd none 0
+dia_intro5 @d_intro5 0 1 dvar_dontEnd none 0
+dia_finalChanceA @d_finalChanceA 4 op_finalWeapons op_finalArmor op_finalSkills op_finalEnd 0 0
+dia_finalChanceB @d_finalChanceB 4 op_finalWeapons op_finalArmor op_finalSkills op_finalEnd 0 0
+dia_finalWeapons @d_finalWeapons 0 1 dvar_openShop shp_smith 0
+dia_finalArmor @d_finalArmor 0 1 dvar_openShop shp_tinker 0
+dia_finalSkills @d_finalSkills 0 1 dvar_openShop shp_tutor 0
+dia_finalEnd @d_finalEnd 0 0 0
+dia_noMoney @d_noMoney 0 1 dvar_dontEnd none 0
+/ field event dialogue
+dia_chest @d_chest 2 op_chest1 op_chest2 0 0
+dia_chest1 @d_chest1 0 1 dvar_money 25 0
+dia_chest2 @d_chest2 0 1 dvar_rep 5 0
+dia_lockedChest @d_lockedChest 2 op_lockedChest1 op_lockedChest2 0 0
+dia_lockedChest1A @d_lockedChest1A 0 1 dvar_money 40 0
+dia_lockedChest1B @d_lockedChest1B 0 1 dvar_health -30 0
+dia_lockedChest2 @d_lockedChest2 0 1 dvar_dontEnd none 0
+dia_lostMerchant @d_lostMerchant 2 op_lostMerchant1 op_lostMerchant2 0 0
+dia_lostMerchant1A @d_lostMerchant1A 0 1 dvar_money 40 0
+dia_lostMerchant1B @d_lostMerchant1B 0 1 dvar_morale -30 0
+dia_lostMerchant2 @d_lostMerchant2 0 1 dvar_dontEnd none 0
+dia_lostLady @d_lostLady 2 op_lostLady1 op_lostLady2 0 0
+dia_lostLady1A @d_lostLady1A 0 1 dvar_morale 100 0
+dia_lostLady1B @d_lostLady1B 0 1 dvar_morale 20 0
+dia_lostLady2 @d_lostLady2 0 1 dvar_dontEnd none 0
+dia_medicalBox @d_medicalBox 2 op_medicalBox1 op_medicalBox2 0 0
+dia_medicalBox1A @d_medicalBox1A 0 1 dvar_health 100 0
+dia_medicalBox1B @d_medicalBox1B 0 1 dvar_health 20 0
+dia_medicalBox2 @d_medicalBox2 0 1 dvar_dontEnd none 0
+dia_goodFount @d_fount 2 op_goodFount1 op_goodFount2 0 0
+dia_goodFount1 @d_goodFount1 0 2 dvar_health 100 dvar_morale 100 0
+dia_goodFount2 @d_fount2 0 1 dvar_dontEnd none 0
+dia_badFount @d_fount 2 op_badFount1 op_goodFount2 0 0
+dia_badFount1 @d_badFount1 0 2 dvar_health -20 dvar_morale -20 0
+dia_corpseG @d_corpseG 0 1 dvar_money 20 0
+dia_corpseSTR @d_corpseSTR 0 1 dvar_str 3 0
+dia_corpseEND @d_corpseEND 0 1 dvar_end 3 0
+dia_corpseDEX @d_corpseDEX 0 1 dvar_dex 3 0
+dia_corpseMND @d_corpseMND 0 1 dvar_mnd 3 0
+dia_corpseCHA @d_corpseCHA 0 1 dvar_cha 3 0
+/ fence dialogue
+dia_fence @d_fence 3 op_fence1 op_fence3 op_fence2 0
+dia_fence1 @d_fence1 0 5 dvar_dex 2 dvar_end 2 dvar_money 50 dvar_rep -5 dvar_event 2 0
+dia_fenceE @d_fenceE 2 op_fenceE1 op_fenceE2 0 0
+dia_fenceEE @d_fenceEE 2 op_fenceEE1 op_fenceEE2 0 0
+dia_fenceEE1 @d_fenceEE1 0 2 dvar_money 30 dvar_rep -5 0
+dia_fenceEE2 @d_fenceEE2 0 1 dvar_money 10 0
+dia_fenceE1A @d_fenceE1A 0 2 dvar_rep -5 dvar_money -50 0
+dia_fenceE1B @d_fenceE1B 0 2 dvar_cha 6 dvar_money -40 0
+dia_fenceE2A @d_fenceE2A 0 2 dvar_dex 6 dvar_end 6 0
+dia_fenceE2B @d_fenceE2B 0 2 dvar_rep -5 dvar_money -50 0
+dia_fence2 @d_fence2 0 1 dvar_dontEnd none 0
+dia_fence3 @d_fence3 0 3 dvar_dex 6 dvar_money -40 dvar_event 2 0
+dia_fenceEEE @d_fenceEEE 0 1 dvar_rep -5 0
+dia_fenceEEEE @d_fenceEEEE 0 2 dvar_money 10 dvar_cha 4 0
+/ dockmaster dialogue
+dia_dock @d_dock 2 op_dock1 op_dock2 0 0
+dia_dock1 @d_dock1 0 4 dvar_str 2 dvar_end 2 dvar_money 30 dvar_event 2 0
+dia_dockE @d_dockE 2 op_dockE1 op_dockE2 0 0
+dia_dockEE @d_dockEE 2 op_dockEE1 op_dockEE2 0 0
+dia_dockEE1 @d_dockEE1 0 1 dvar_str 3 0
+dia_dockEE2 @d_dockEE2 0 1 dvar_end 3 0
+dia_dockE1A @d_dockE1A 0 1 dvar_rep -5 0
+dia_dockE1B @d_dockE1B 0 1 dvar_money 50 0
+dia_dockE2A @d_dockE2A 0 1 dvar_rep 12 0
+dia_dockE2B @d_dockE2B 0 1 dvar_rep -2 0
+dia_dock2 @d_dock2 0 1 dvar_dontEnd none 0
+/ guard dialogue
+dia_guard @d_guard 3 op_guard1 op_guard3 op_guard2 0 0
+dia_guard1 @d_guard1 0 5 dvar_str 2 dvar_cha 2 dvar_money 30 dvar_rep 2 dvar_event 4 0
+dia_guardE @d_guardE 2 op_guardE1 op_guardE2 0 1 dvar_oneTime none
+dia_guardEE @d_guardEE 0 1 dvar_money 15 0
+dia_guardEEE @d_guardEEE 0 1 dvar_rep 5 0
+dia_guardEEEE @d_guardEEEE 0 1 dvar_str 3 0
+dia_guardE1A @d_guardE1A 0 1 dvar_morale -10 0
+dia_guardE1B @d_guardE1B 0 1 dvar_str 6 0
+dia_guardE2A @d_guardE2A 0 2 dvar_rep 10 dvar_morale 10 0
+dia_guardE2B @d_guardE2B 0 1 dvar_morale -10 0
+dia_guard2 @d_guard2 0 1 dvar_dontEnd none 0
+dia_guard3 @d_guard3 0 2 dvar_money -50 dvar_str 6 0
+/ smith dialogue
+dia_smith @d_smith 3 op_smith1 op_smith2 op_smith3 0 0
+dia_smith1 @d_smith1 0 1 dvar_openShop shp_smith 0
+dia_smith2 @d_smith2 0 4 dvar_str 2 dvar_mnd 2 dvar_money 40 dvar_event 2 0
+dia_smithE @d_smithE 2 op_smithE1 op_smithE2 0 0
+dia_smithEE @d_smithEE 2 op_smithEE1 op_smithEE2 0 0
+dia_smithEE1 @d_smithEE1 0 1 dvar_dex 4 0
+dia_smithEE2 @d_smithEE2 0 2 dvar_end 4 dvar_health -30 0
+dia_smithE1A @d_smithE1A 0 2 dvar_str 6 dvar_money 30 0
+dia_smithE1B @d_smithE1B 0 1 dvar_rep -5 0
+dia_smithE2 @d_smithE2 0 0 0
+dia_smith3 @d_smith3 0 1 dvar_dontEnd none 0
+/ tinker dialogue
+dia_tinker @d_tinker 3 op_tinker1 op_tinker2 op_tinker3 0 0
+dia_tinker1 @d_tinker1 0 1 dvar_openShop shp_tinker 0
+dia_tinker2 @d_tinker2 0 4 dvar_dex 2 dvar_mnd 2 dvar_money 40 dvar_event 4 0
+dia_tinkerE @d_tinkerE 3 op_tinkerE1 op_tinkerE2 op_tinkerE3 0 2 dvar_oneTime none dvar_mnd 30
+dia_tinkerEE @d_tinkerEE 3 op_tinkerEE1 op_tinkerEE2 op_tinkerE3 0 2 dvar_oneTime none dvar_mnd 40
+dia_tinkerEEE @d_tinkerEEE 0 1 dvar_dontEnd none 1 dvar_oneTime none
+dia_tinkerEEEE @d_tinkerEEEE 2 op_tinkerEEEE1 op_tinkerEEEE2 0 0
+dia_tinkerEEEE1 @d_tinkerEEEE1 0 1 dvar_str 4 0
+dia_tinkerEEEE2 @d_tinkerEEEE2 0 2 dvar_cha 4 dvar_morale -30 0
+dia_tinkerE1 @d_tinkerE1 0 2 dvar_weapon wp_vibroDagger dvar_money -50 0
+dia_tinkerE2 @d_tinkerE2 0 2 dvar_weapon wp_chainAxe dvar_money -50 0
+dia_tinkerE3 @d_tinkerE3 0 1 dvar_money 60 0
+dia_tinkerEE1 @d_tinkerEE1 0 2 dvar_weapon wp_bodkinBow dvar_money -100 0
+dia_tinkerEE2 @d_tinkerEE2 0 2 dvar_weapon wp_autoXbow dvar_money -100 0
+dia_tinker3 @d_tinker3 0 1 dvar_dontEnd none 0
+/ waiter dialogue
+dia_waiter @d_waiter 3 op_waiter1 op_waiter2 op_waiter3 0
+dia_waiter1 @d_waiter1 0 4 dvar_dex 2 dvar_cha 2 dvar_money 40 dvar_event 2 0
+dia_waiterE @d_waiterE 2 op_waiterE1 op_waiterE2 0 0
+dia_waiterEE @d_waiterEE 2 op_waiterEE1 op_waiterEE2 0 0
+dia_waiterEE1 @d_waiterEE1 0 1 dvar_dex 4 0
+dia_waiterEE2 @d_waiterEE2 0 1 dvar_cha 4 0
+dia_waiterE1A @d_waiterE1A 0 1 dvar_morale -20 0
+dia_waiterE1B @d_waiterE1B 0 2 dvar_money 30 dvar_morale -10 0
+dia_waiterE2A @d_waiterE2A 0 1 dvar_rep 5 0
+dia_waiterE2B @d_waiterE2B 0 1 dvar_morale -10 0
+dia_waiter2 @d_waiter2 0 3 dvar_money -60 dvar_cha 6 dvar_morale 100
+dia_waiter3 @d_waiter3 0 1 dvar_dontEnd none 0
+/ scribe dialogue
+dia_scribe @d_scribe 2 op_scribe1 op_scribe2 0 0
+dia_scribe1 @d_scribe1 0 4 dvar_mnd 2 dvar_cha 2 dvar_money 20 dvar_event 2 0
+dia_scribeE @d_scribeE 2 op_scribeE1 op_scribeE2 0 0
+dia_scribeEE @d_scribeEE 2 op_scribeEE1 op_scribeEE2 0 0
+dia_scribeEE1 @d_scribeEE1 0 1 dvar_cha 4 0
+dia_scribeEE2 @d_scribeEE2 0 1 dvar_str 4 0
+dia_scribeE1A @d_scribeE1A 0 1 dvar_money 50 0
+dia_scribeE1B @d_scribeE1B 0 2 dvar_rep -20 dvar_money -20 0
+dia_scribeE2 @d_scribeE2 0 0 0
+dia_scribe2 @d_scribe2 0 1 dvar_dontEnd none 0
+/ prost dialogue
+dia_prostM @d_prostM 2 op_prostM1 op_prostM2 0 0
+dia_prostM1A @d_prostM1A 0 4 dvar_money -50 dvar_morale 100 dvar_dontEnd none dvar_event 1 0
+dia_prostE @d_prostE 2 op_prostE1 op_prostE2 0 0
+dia_prostE1 @d_prostE1 0 1 dvar_money -30 0
+dia_prostE2 @d_prostE2 0 2 dvar_health -50 dvar_morale -50 0
+dia_prostE3 @d_prostE3 1 op_prostE2 0 0
+dia_prostM1B @d_prostM1B 0 4 dvar_money -50 dvar_morale 100 dvar_rep -10 dvar_dontEnd none 0
+dia_prostM2 @d_prostM2 0 1 dvar_dontEnd none 0
+dia_prostF @d_prostF 2 op_prostF1 op_prostF2 0 0
+/ healer dialogue
+dia_healer @d_healer 3 op_healer3 op_healer1 op_healer2 0 0
+dia_healer1 @d_healer1 0 3 dvar_money -60 dvar_end 6 dvar_event 6 0
+dia_healerE @d_healerE 0 1 dvar_str 2 0
+dia_healerEE @d_healerEE 0 1 dvar_dex 2 0
+dia_healerEEE @d_healerEEE 0 2 dvar_health -30 dvar_morale -30 0
+dia_healerEEEE @d_healerEEEE 0 5 dvar_str 1 dvar_dex 1 dvar_end 1 dvar_mnd 1 dvar_cha 1 0
+dia_healerEEEEE @d_healerEEEEE 0 1 dvar_mnd -2 0
+dia_healerEEEEEE @d_healerEEEEEE 0 1 dvar_dex -2 0
+dia_healer2 @d_healer2 0 1 dvar_dontEnd none 0
+dia_healer3 @d_healer3 0 3 dvar_money -10 dvar_health 100 dvar_dontEnd none 0
+/ master dialogue
+dia_master none 0 2 dvar_dontEnd none dvar_goOn op_master 0
+dia_masterPS none 0 1 dvar_goOn op_masterP 0
+dia_masterSS none 0 1 dvar_goOn op_masterS 0
+dia_masterPlur @d_masterPlur 0 0 0
+dia_masterSing @d_masterSing 0 0 0
+dia_masterFPlur @d_masterFPlur 0 0 0
+dia_masterFSing @d_masterFSing 0 0 0
+/ tutor dialogue
+dia_tutor @d_tutor 3 op_tutor1 op_tutor2 op_tutor3 0 0
+dia_tutor1 @d_tutor1 0 1 dvar_openShop shp_tutor 0
+dia_tutor2 @d_tutor2 0 3 dvar_money -60 dvar_mnd 6 dvar_event 4 0
+dia_tutorE @d_tutorE 0 1 dvar_str 3 0
+dia_tutorEE @d_tutorEE 0 1 dvar_end 3 0
+dia_tutorEEE @d_tutorEEE 0 1 dvar_dex 3 0
+dia_tutorEEEE @d_tutorEEEE 0 1 dvar_cha 3 0
+dia_tutor3 @d_tutor3 0 1 dvar_dontEnd none 0
+/
+/
+DIALOGUECHOICE:
+/ name line outcomeDialogue* outcomeCondition* outcomeNum* (1-?)
+/ the final outcome should have "none none" for conditions, since otherwise there might be a situation with no outcome
+/ field event dialogue choices
+op_chest1 @o_chest1 dia_chest1 none none
+op_chest2 @o_chest2 dia_chest2 none none
+op_lockedChest1 @o_lockedChest1 dia_lockedChest1A dvar_mnd 40 dia_lockedChest1B none none
+op_lockedChest2 @o_lockedChest2 dia_lockedChest2 none none
+op_lostMerchant1 @o_lostMerchant1 dia_lostMerchant1A dvar_rep 30 dia_lostMerchant1A dvar_cha 50 dia_lostMerchant1B none none
+op_lostMerchant2 @o_lostMerchant2 dia_lostMerchant2 none none
+op_lostLady1 @o_lostLady1 dia_lostLady1A dvar_cha 40 dia_lostLady1B none none
+op_lostLady2 @o_lostLady2 dia_lostLady2 none none
+op_medicalBox1 @o_medicalBox1 dia_medicalBox1A dvar_mnd 40 dia_medicalBox1B none none
+op_medicalBox2 @o_medicalBox2 dia_medicalBox2 none none
+op_goodFount1 @o_fount1 dia_goodFount1 none none
+op_goodFount2 @o_fount2 dia_goodFount2 none none
+op_badFount1 @o_fount1 dia_badFount1 none none
+/ misc dialogue choices
+op_finalChance none dia_finalChanceB dvar_month 4 dia_finalChanceA none none
+op_finalWeapons @o_finalWeapons dia_finalWeapons none none
+op_finalArmor @o_finalArmor dia_finalArmor none none
+op_finalSkills @o_finalSkills dia_finalSkills none none
+op_finalEnd @o_finalEnd dia_finalEnd none none
+op_intro1 @o_intro1 dia_intro2 none none
+op_intro2 @o_intro2 dia_intro3 none none
+op_intro3 @o_intro3 dia_intro4 none none
+op_intro4 @o_intro4 dia_intro5 none none
+/ fence dialogue choices
+op_fence1 @o_fence1 dia_fence1 none none
+op_fenceE1 @o_fenceE1 dia_fenceE1A dvar_mutex none dia_fenceE1B none none
+op_fenceE2 @o_fenceE2 dia_fenceE2A dvar_mutex none dia_fenceE2B none none
+op_fenceEE1 @o_fenceEE1 dia_fenceEE1 none none
+op_fenceEE2 @o_fenceEE2 dia_fenceEE2 none none
+op_fence2 @o_fence2 dia_fence2 none none
+op_fence3 @o_fence3 dia_fence3 dvar_money 40 dia_noMoney none none
+/ dock dialogue choices
+op_dock1 @o_dock1 dia_dock1 none none
+op_dockE1 @o_dockE1 dia_dockE1A dvar_mutex none dia_dockE1B none none
+op_dockE2 @o_dockE2 dia_dockE2A dvar_mutex none dia_dockE2B none none
+op_dockEE1 @o_dockEE1 dia_dockEE1 none none
+op_dockEE2 @o_dockEE2 dia_dockEE2 none none
+op_dock2 @o_dock2 dia_dock2 none none
+/ guard dialogue choices
+op_guard1 @o_guard1 dia_guard1 none none
+op_guardE1 @o_guardE1 dia_guardE1A dvar_mutex none dia_guardE1B none none
+op_guardE2 @o_guardE2 dia_guardE2A dvar_mutex none dia_guardE2B none none
+op_guard2 @o_guard2 dia_guard2 none none
+op_guard3 @o_guard3 dia_guard3 dvar_money 50 dia_noMoney none none
+/ smith dialogue choices
+op_smith1 @o_smith1 dia_smith1 none none
+op_smithE1 @o_smithE1 dia_smithE1A dvar_str 40 dia_smithE1B none none
+op_smithE2 @o_smithE2 dia_smithE2 none none
+op_smithEE1 @o_smithEE1 dia_smithEE1 none none
+op_smithEE2 @o_smithEE2 dia_smithEE2 none none
+op_smith2 @o_smith2 dia_smith2 none none
+op_smith3 @o_smith3 dia_smith3 none none
+/ tinker dialogue choices
+op_tinker1 @o_tinker1 dia_tinker1 none none
+op_tinkerE1 @o_tinkerE1 dia_tinkerE1 none none
+op_tinkerE2 @o_tinkerE2 dia_tinkerE2 none none
+op_tinkerE3 @o_tinkerE3 dia_tinkerE3 none none
+op_tinkerEE1 @o_tinkerEE1 dia_tinkerEE1 none none
+op_tinkerEE2 @o_tinkerEE2 dia_tinkerEE2 none none
+op_tinkerEEEE1 @o_tinkerEEEE1 dia_tinkerEEEE1 none none
+op_tinkerEEEE2 @o_tinkerEEEE2 dia_tinkerEEEE2 none none
+op_tinker2 @o_tinker2 dia_tinker2 none none
+op_tinker3 @o_tinker3 dia_tinker3 none none
+/ waiter dialogue choices
+op_waiter1 @o_waiter1 dia_waiter1 none none
+op_waiterE1 @o_waiterE1 dia_waiterE1A dvar_mutex none dia_waiterE1B none none
+op_waiterE2 @o_waiterE2 dia_waiterE2A dvar_mutex none dia_waiterE2B none none
+op_waiterEE1 @o_waiterEE1 dia_waiterEE1 none none
+op_waiterEE2 @o_waiterEE2 dia_waiterEE2 none none
+op_waiter2 @o_waiter2 dia_waiter2 dvar_money 60 dia_noMoney none none
+op_waiter3 @o_waiter3 dia_waiter3 none none
+/ tutor dialogue choices
+op_tutor1 @o_tutor1 dia_tutor1 none none
+op_tutor2 @o_tutor2 dia_tutor2 dvar_money 60 dia_noMoney none none
+op_tutor3 @o_tutor3 dia_tutor3 none none
+/ scribe dialogue choices
+op_scribe1 @o_scribe1 dia_scribe1 none none
+op_scribeE1 @o_scribeE1 dia_scribeE1A dvar_mutex none dia_scribeE1B none none
+op_scribeE2 @o_scribeE2 dia_scribeE2 none none
+op_scribeEE1 @o_scribeEE1 dia_scribeEE1 none none
+op_scribeEE2 @o_scribeEE2 dia_scribeEE2 none none
+op_scribe2 @o_scribe2 dia_scribe2 none none
+/ prost dialogue choices
+op_prostM1 @o_prost1 dia_noMoney dvar_mMoney 60 dia_prostM1A dvar_phenome 1 dia_prostM1B none none
+op_prostM2 @o_prost2 dia_prostM2 none none
+op_prostF1 @o_prost1 dia_noMoney dvar_mMoney 60 dia_prostM1B dvar_phenome 1 dia_prostM1A none none
+op_prostF2 @o_prost2 dia_prostM2 none none
+op_prostE1 @o_prostE1 dia_prostE1 dvar_money 30 dia_prostE3 none none
+op_prostE2 @o_prostE2 dia_prostE2 none none
+/ healer dialogue choices
+op_healer1 @o_healer1 dia_healer1 dvar_money 60 dia_noMoney none none
+op_healer2 @o_healer2 dia_healer2 none none
+op_healer3 @o_healer3 dia_healer3 dvar_money 10 dia_noMoney none none
+/ master psuedo-choices
+op_master none dia_masterPS dvar_countDown 2 dia_masterSS none none
+op_masterP none dia_masterFPlur dvar_month 4 dia_masterPlur none none
+op_masterS none dia_masterFSing dvar_month 4 dia_masterSing none none
+/
+/
+ITEMTYPE:
+itt_weapon
+itt_armor
+itt_skill
+/
+/
+SHOPLIST:
+/ name item* item*Type item*stat item*req (1-?)
+shp_smith wp_sword1 itt_weapon dvar_str 20 wp_dagger1 itt_weapon dvar_str 10 wp_axe1 itt_weapon dvar_str 25 wp_bow1 itt_weapon dvar_str 15 wp_xbow1 itt_weapon dvar_str 20 wp_sword2 itt_weapon dvar_str 30 wp_dagger2 itt_weapon dvar_str 20 wp_axe2 itt_weapon dvar_str 35 wp_bow2 itt_weapon dvar_str 25 wp_xbow2 itt_weapon dvar_str 30 wp_throwingKnife itt_weapon dvar_str 25 wp_sword3 itt_weapon dvar_str 40 wp_dagger3 itt_weapon dvar_str 30 wp_axe3 itt_weapon dvar_str 45 wp_bow3 itt_weapon dvar_str 35 wp_xbow3 itt_weapon dvar_str 40 wp_throwingDisc itt_weapon dvar_str 35
+shp_tinker arm_light1 itt_armor dvar_str 20 arm_heavy1 itt_armor dvar_str 30 arm_light2 itt_armor dvar_str 30 arm_heavy2 itt_armor dvar_str 40 arm_light3 itt_armor dvar_str 40 arm_heavy3 itt_armor dvar_str 50
+shp_tutor efS_immunity itt_skill dvar_end 30 efS_slowArrow itt_skill dvar_dex 30 efS_bouncingArrow itt_skill dvar_dex 50 efS_impact itt_skill dvar_str 30 efS_adrenaline itt_skill dvar_str 50 efS_poisonedBlade itt_skill dvar_mnd 50 efS_weakenArrow itt_skill dvar_mnd 50
+/
+/
+PREMADEMAP:
+/ name width height startX startY tile* (1-?)
+pmp_*** 24 24 10 11 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 4 4 4 2 2 2 4 4 5 5 5 5 5 6 6 5 5 5 5 5 5 4 4 13 3 3 13 4 4 2 3 13 5 5 5 5 5 6 6 5 5 5 5 2 2 3 13 2 4 4 2 13 3 4 4 2 5 5 5 5 5 6 6 5 5 5 2 2 2 2 2 2 13 3 2 2 2 13 3 2 5 5 5 6 6 6 6 6 6 2 2 2 2 2 2 2 2 2 2 2 2 2 4 4 5 5 5 6 6 6 6 6 6 2 2 4 4 4 2 2 2 4 4 2 4 4 13 3 5 5 5 6 6 4 4 4 4 2 2 3 13 3 2 2 2 13 3 2 3 13 2 4 5 5 5 6 6 13 3 3 3 2 2 1 6 1 2 2 2 2 2 2 2 2 2 3 5 5 5 11 11 11 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 4 4 5 5 5 2 11 11 11 11 11 2 2 2 2 2 2 2 2 2 2 2 2 2 13 3 5 5 2 2 1 11 11 11 11 11 2 2 2 2 2 2 2 2 2 2 2 2 2 4 4 4 2 2 1 1 1 1 11 11 11 11 11 2 2 2 2 2 2 1 1 1 1 3 3 13 8 8 8 1 1 2 11 6 6 6 11 2 1 1 1 1 1 1 8 8 8 1 2 2 8 8 12 11 11 11 11 6 6 6 11 2 7 8 8 8 1 8 8 8 8 8 2 2 8 8 11 11 11 11 11 6 6 6 11 11 11 8 8 8 1 8 7 7 7 8 2 1 7 7 7 11 11 2 11 11 11 11 11 11 11 8 7 7 1 8 8 8 8 8 1 4 4 2 2 11 11 1 11 11 1 11 11 1 7 7 7 7 1 8 7 12 7 8 1 3 13 2 4 4 4 1 4 4 4 11 11 1 1 1 1 1 2 7 11 11 11 7 4 4 1 1 3 3 3 1 3 3 3 11 11 11 11 11 11 11 11 11 11 11 11 5 13 3 1 1 1 1 1 1 1 1 1 11 11 11 11 11 11 11 11 11 11 11 2 5 1 1 8 8 1 1 1 1 8 8 1 11 11 1 8 8 2 2 2 2 8 8 5 5 8 8 12 7 8 8 8 8 7 12 8 9 10 8 12 7 8 8 8 8 7 12 8 8 7 7 7 7 7 7 7 7 7 7 7 11 11 7 7 7 7 7 7 7 7 7 7 7 2 2 2 2 2 2 2 2 2 2 2 11 11 2 1 2 2 2 1 1 1 1 1 1 60 1 91 7 102 0 116 8 180 5 298 10 322 12 341 9 374 6 389 4 393 3 429 11 491 2
+pmp_*** 20 15 9 2 34 34 34 34 34 7 7 8 8 9 10 8 8 7 7 34 34 34 34 34 34 34 35 35 35 7 7 7 7 11 11 7 7 7 7 35 35 35 34 34 34 34 36 36 36 36 36 36 36 11 11 36 36 36 36 36 36 36 34 34 34 34 36 36 36 36 36 36 36 11 11 36 36 36 36 2 2 36 34 34 34 34 36 2 2 2 36 36 36 11 11 36 36 2 2 2 2 36 34 34 34 34 36 2 1 2 2 36 11 36 11 36 36 2 1 2 2 36 34 34 34 34 36 2 1 1 2 2 2 36 11 11 2 2 1 2 2 36 34 34 34 34 36 2 1 1 1 1 2 2 2 2 1 1 1 1 2 36 34 34 34 34 25 2 2 1 1 1 1 1 1 1 1 1 1 1 1 36 34 34 35 34 25 25 2 1 1 1 1 1 1 1 1 1 1 1 1 36 34 34 23 35 25 25 2 2 2 1 2 2 1 2 2 2 2 1 1 36 34 34 23 23 25 25 25 25 25 25 25 25 25 25 25 25 2 2 2 36 34 34 23 23 25 25 26 27 25 25 25 25 25 25 25 25 25 25 25 25 34 34 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 35 34 34 34 34 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 35 35 34 34
+/
+/
+APPEARANCE:
+/ name hairStyle phenome skinColor armor
+appr_* 1 0 clr_humanSkinE arm_casualClothes
+appr_* 2 1 clr_humanSkin2 arm_casualClothes
+appr_* 2 0 clr_humanSkin1 arm_formalClothes
+appr_* 0 1 clr_humanSkinS arm_formalClothes
+/
+/
+ENDING:
+/ name highestStat minMoney minRep victory text notDead
+end_none none 300 3000 true @e_none true
+end_knight dvar_str none 10 true @e_knight false
+end_mercenary dvar_str none none true @e_mercenary false
+end_tracker dvar_dex none 10 true @e_tracker false
+end_explorer dvar_end 200 none true @e_explorer false
+end_tinker dvar_mnd none none true @e_tinker false
+end_soldier dvar_end none none true @e_soldier false
+end_thief dvar_dex none none true @e_thief false
+end_inventor dvar_mnd 200 none true @e_inventor false
+end_noble dvar_cha 200 10 true @e_noble false
+end_comedian dvar_cha none 10 true @e_comedian false
+end_assistant dvar_cha none none true @e_assistant false
+end_coward none none none false @e_coward true
+end_homeless none none 10 false @e_homeless false
+end_corpse none none none false @e_corpse false
+/
+/
+LIST:
+/ name ?
+/ special data: corpseblooddown corpsebloodS corpsebloodE
+lst_special 8 18 20
+/ hair color to player thingie
+lst_playerHairColor clr_humanHairS clr_humanHair2 clr_humanHairE clr_humanHair1
+/ sound effect volumes
+lst_vols 50 20 70 none 50 none 50 none 50 20 50 20
+/ raw event sublists
+lst_travelerEvents ntmp_lostMerchant ntmp_lostLady
+lst_chestEvents ntmp_treasureChest ntmp_lockedChest ntmp_medicalBox
+lst_fountainEvents ntmp_goodFountain ntmp_goodFountain ntmp_badFountain
+lst_bodyEvents ntmp_corpseG ntmp_corpseG ntmp_corpseSTR ntmp_corpseEND ntmp_corpseDEX ntmp_corpseMND ntmp_corpseCHA
+/ area event lists
+lst_caveEvents lst_fountainEvents lst_bodyEvents
+lst_castleEvents lst_chestEvents lst_fountainEvents
+lst_forestEvents lst_travelerEvents lst_chestEvents
+lst_wastelandEvents lst_travelerEvents lst_bodyEvents
+/ furniture lists
+lst_castleFurniture1 aTile_barrel
+lst_castleFurniture2 aTile_pillar aTile_pillar aTile_table aTile_chair
+lst_caveFurniture1 aTile_caveBoulder aTile_stalact
+lst_caveFurniture2 aTile_caveBoulder aTile_stalact
+lst_forestFurniture1 aTile_flower aTile_tallGrass aTile_flower aTile_tallGrass aTile_campFire
+lst_forestFurniture2 aTile_tallGrass
+lst_wastelandFurniture1 aTile_wasteBoulder aTile_barrel aTile_wasteBoulder aTile_barrel aTile_chair
+lst_wastelandFurniture2 aTile_wasteBoulder aTile_barrel
+/
+/
+FILLERDATA:

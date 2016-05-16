@@ -1,0 +1,380 @@
+/ dialogue variable names
+v_str STR
+v_end END
+v_dex DEX
+v_mnd MND
+v_cha CHA
+v_health HEALTH
+v_morale MORALE
+v_money MONEY
+v_rep REPUTATION
+v_invalid INVALID
+/ map name components
+n_dP1 the Burial Cave of 
+n_dP2 the Lower Realm of 
+n_fP1 the Bandit Forest of 
+n_fP2 the Invaded Forest of 
+n_cP1 the Stronghold of 
+n_cP2 the Manor of 
+n_wP1 the Blasted Wastes of 
+n_wP2 the Lawless Wastes of 
+n_f1S green
+* shade
+* gloom
+n_f1E fey
+n_f2S wood
+*  copse
+* weald
+n_f2E grove
+n_d1S dim
+* grey
+* silver
+* dark
+* bone
+n_d1E under
+n_d2S  cave
+*  passage
+* dark
+*  chasm
+*  cavern
+*  pit
+*  hollow
+*  den
+*  grotto
+* land
+n_d2E stone
+n_c1S brave
+* glory
+* crimson
+* king
+n_c1E raven
+n_c2S  rock
+*  castle
+*  keep
+* wall
+* 's rest
+*  bastion
+n_c2E hold
+n_w1S dust
+* warden's 
+* death 
+* boulder 
+n_w1E windy 
+n_w2S crag
+* valley
+* land
+n_w2E rock
+/ dialogue lines
+d_dead You manage to drag your broken body back to town, where you get medical treatment.
+d_fled You flee back to town, in fear and shame.
+d_good You return to town, feeling victorious.
+d_noMoney You get the feeling you shouldn't pay for services you can't afford.
+d_chest You open the chest and find it full of things. Most of the stuff inside is too bulky to be worth taking, but there are a few really valuable things here.
+d_chest1 You pocket the valuables, thinking about what you'll spend it on back at town.
+d_chest2 You pocket the valuables, thinking about how popular you'll be back at town when you start handing it out.
+d_lockedChest You try to open the chest but notice it has a clever lock mechanism. It'd take an equally clever person to unlock this.
+d_lockedChest1A You successfully unlock the chest, and take the treasure within.
+d_lockedChest1B You try to unlock the chest, but you fail to notice a trap mechanism. The chest explodes, destroying the contents and hurting you.
+d_lockedChest2 You leave the chest alone.
+d_lostMerchant "Hail, traveler. ...what am I doing down here? I'm lost, okay. Don't worry, I'll find my way out. Why did you ask?" You aren't as optimistic about his chances, but he also looks frightened and paranoid enough that talking him into getting help might be tricky.
+d_lostMerchant1A You manage to convince him to follow you back, and you show him the way back to town. He gives you a reward, in gratitute and relief.
+d_lostMerchant1B Your attempts to convince him make him suspicious, and he trips you and runs off.
+d_lostMerchant2 You back off, making sure to seem as nonthreatening as possible.
+d_lostLady "Oh! You aren't hostile? I was taking a walk, and I got lost. Can you help me get back to town?"
+d_lostLady1A You guide her back. On the way out, she gives you a kiss on the cheek. How gratifying.
+d_lostLady1B You guide her back. The good deed makes you feel a bit better about yourself.
+d_lostLady2 You aren't sure if you can safely guide her out, so you don't.
+d_medicalBox This box, on further inspection, turns out to be full of medical supplies. There's not much yet.
+d_medicalBox1A You use the medical supplies to the best of your ability.
+d_medicalBox1B You don't know much about medicine, but you still manage to do a little.
+d_medicalBox2 You decide to save the supplies for later.
+d_fount You come across a strange pool of water. The water looks cool and inviting.
+d_goodFount1 You drink the water and find it refreshing.
+d_badFount1 You drink the water and- ack! It's poisoned!
+d_fount2 You hold off on drinking from the water.
+d_corpseG You loot the corpse and find it was carrying some valuable jewelry. You keep it, to sell once you get back to town.
+d_corpseSTR You loot the corpse and find it was carrying some kind of enhancement potion. You down it and feel stronger. Too bad he didn't drink it, or he might not have died.
+d_corpseEND You loot the corpse and find it was carrying some hearty stew, still warm. She must have died recently. You wolf it down. It was extra hearty!
+d_corpseDEX You loot the corpse and find it was carrying some weird-smelling balm. It seems legit, though, so you apply it. It makes you feel limber.
+d_corpseMND You loot the corpse and find it was carrying some interesting books. You stuff them into your pack. You can read them later on.
+d_corpseCHA You loot the corpse and find it was carrying some cheap trinkets. You keep them, and feel more confident.
+d_fence "Hey, you here for acrobatics training? Or are you here to do some jobs for me? I can make it worth your while, if you don't mention me to the guards."
+d_fence1 You spend the week burglarizing houses, picking pockets, and shaking down merchants. The fence takes the largest share of the earnings, but you still make a good amount.
+d_fenceE While climbing out of a window, you walk into a guard. He has three friends, and does not look happy with you.
+d_fenceE1A The guards are offended by your attempts to bribe them. They haul you down to the courthouse, where you have to pay a stiff fine. Luckily they could only get proof of your trespassing, and not any of the theft.
+d_fenceE1B Thinking quickly, you bribe the guards. It's not cheap, but it's better than going to jail.
+d_fenceE2A You take off like an arrow, and lose the guards in an alleyway. Whew! That was a close one.
+d_fenceE2B You try to flee, but one of the guards tackles you to the ground before you can go more than a few feet. They haul you down to the courthouse, where you have to pay a stiff fine. Luckily they could only get proof of your trespassing, and not any of the theft.
+d_fenceEE When robbing a house, you find a big gem. This is more valuable than most of the individual things you find, and you're tempted to sell it yourself instead of relying on the fence. That way he wouldn't take a cut...
+d_fenceEE1 You sell the gem to an interested buyer. You make a good profit, but they are a bit suspicious about where you got it.
+d_fenceEE2 You pawn the gem off as normal, making only a cut.
+d_fence2 You walk off, because crime doesn't pay.
+d_fence3 You spend the week practicing acrobatics, moving all around town. The service might be a front, but the man genuinely does know acrobatics.
+d_fenceEEE Unfortunately, you get seen working with the man. His shady reputation blemishes yours.
+d_fenceEEEE As part of the training he has you do a little street performing. He takes a split of the money, but you get some busking experience too.
+d_dock "You looking for work at the docks? We always need more young'uns with strong backs here."
+d_dock1 You spend the week loading and unloading crates. It's exhausting work, but it sure builds your body.
+d_dockE Purely by accident, you drop one of the crates you are hauling. It comes open, revealing a huge load of drugs. This seems like something you should report to the guards.
+d_dockE1A You begin to pocket some of the contents, but the dockmaster notices you and reprimands you. You decide not to bring up the contents, because that would just make you look worse.
+d_dockE1B You pocket some of the contents, and later sell them for a big profit.
+d_dockE2A You report the matter to the guards. When you point out the ship the crate came from, they quickly search it and discover it is full of smuggled drugs. They arrest the sailors, and thank you for your part in finding this out.
+d_dockE2B You report the matter to the guards. However, by the time you have lead them back the incriminating crate has vanished. The guardsmen chastize you for wasting their time.
+d_dockEE You have one especially busy day on the job. You're exhausted, and there are still three more ships to unload.
+d_dockEE1 Ignoring your weariness, you push yourself hard. You manage to get through all three ships, and then collapse. It's great exercise though!
+d_dockEE2 You sneak off, unnoticed in the bustle, and take a nap. You feel refreshed!
+d_dock2 You decide to go look for work somewhere nicer.
+d_guard "Traveler. You look like a warrior. Are you here to work? The guards are always understaffed. We also offer a training program, if you're interested."
+d_guard1 You spend the week watching the gates, showing merchants around, and bringing in crooks. You get into some close scrapes, but at the end you feel prouder and more in with the workings of the town.
+d_guardE One day, you are chasing down a particularly violent criminal. You and your partner in the guard round the corner and your partner takes a crossbow bolt to the stomache. The criminal drops his crossbow and flees.
+d_guardEE You arrest thief, and get a bonus.
+d_guardEEE You bring in a murderer, and become the talk of the town!
+d_guardEEEE You end a bar brawl. It's good practice.
+d_guardE1A You chase on, ignoring your partner. However, you soon lose the murderer. Eventually you leave, depressed. Was it really worth it?
+d_guardE1B You chase on, ignoring your partner. Luckily, it pays off and you soon chase down and overpower the murderer. It won't bring your partner back to life, but at least you caught his killer.
+d_guardE2A You turn your attention to the partner. With some quick action you are able to staunch the bleeding long enough for the healer to get here. You didn't catch the perp, but at least you saved a life.
+d_guardE2B You turn your attention to your partner, but it's too late for him. You try as hard as you can, but he soon passes away. It's pretty depressing.
+d_guard2 You leave for a safer job.
+d_guard3 You spend the week going through an intensive training program. The combat training is nothing special- the guards probably don't want to give away too much to just anyone- but the strength training is excellent.
+d_smith "Ah, here's someone who is in need of a better weapon. I can provide one for you, for a price. Or I can offer you some work, if you are willing."
+d_smith1 "Here's my selection. My prices are quite reasonable when trading weapons in, don't worry."
+d_smithE Midway through the week, an army quartermaster barges into the smithery. He demands a shipment of 50 swords be made by the end of the week. You're not sure if the shop can manage that. Unfortunately, you are the only one in at the moment, so you'll have to make the decision.
+d_smithEE While working on the forge, you slip and drop a still-hot blade onto yourself!
+d_smithEE1 You quickly leap backwards, making sure the blade doesn't touch you.
+d_smithEE2 You catch the blade with your hands, and then quickly regret it as it burns your hand. You feel tougher for having survive a burn, though.
+d_smithE1A Everyone in the shop works hard, and you just barely manage to make the swords in time. You work especially hard, and get a cut of the profits.
+d_smithE1B Everyone in the shop works hard, but you aren't quite able to make the order. The master smith is not very happy with you taking such an unrealistic order.
+d_smithE2 You beg off the job, and he leaves to look elsewhere.
+d_smith2 You spend the week making pots, pans, shovels, and the occasional sword. It's tiring but it's good exercise, and good practice.
+d_smith3 You politely take your leave.
+d_tinker "Oh, are you here to see my machines? Or the armor, I guess. ...don't just stand there, I'm a busy man."
+d_tinker1 "Sure, sure, take a look. Get my attention again when you've picked something."
+d_tinkerE While working, you get an idea for a design for a clever cutting mechanism. You could sell it, or you could make something using it... but the master tinker legally owns any design made on the job, so you can't do both.
+d_tinkerE1 You make a special knife with a vibrating cutting edge.
+d_tinkerE2 You make a modified axe out of machine parts, giving it a bladed chain that will enhance its cutting ability.
+d_tinkerE3 You sell the design to the master tinker, who goes off to make use of it in his own machines.
+d_tinkerEE While working, you get an idea for a design for an automatic winding mechanism. You could sell it, or you could make something using it... but the master tinker legally owns any design made on the job, so you can't do both.
+d_tinkerEE1 You put the mechanism onto a metal bow, to amplify your strength.
+d_tinkerEE2 You built a crossbow around the mechanism, making a self-winding crossbow.
+d_tinkerEEE At the end of the week, you finally finish the clock you were working on. It's the dead of night, the work having taken much longer than expected. However, once you wind the clock up it breaks, and suddenly it's day! You go outside and find that it is the beginning of the week, as though you hadn't spent a week working. How mysterious.
+d_tinkerEEEE As you work on the fifth fucking clock of the day, you feel anger build inside you. You can't take assembling the repetitiveness. You feel an urge to smash the clock to pieces.
+d_tinkerEEEE1 In a fit of rage you smash the clock into a pile of scraps. You stand there, panting, but relieved. Then you quickly clean up, so that nobody questions why your table is covered in broken parts.
+d_tinkerEEEE2 You take a couple deep breaths and calm yourself. It's frustrating, but probably best in the long run.
+d_tinker2 You spend the week assembling armor, making clocks, and carving gears. It's good practice for your hands and your mind.
+d_tinker3 You decide to leave this man to his work.
+d_waiter "Hey there hun. You here to drink, or here for work?"
+d_waiter1 You spend the week serving drinks, dealing with rowdy customers, and cleaning messes. It's not glamorous, but it's work.
+d_waiterEE The patrons are especially rowdy today, and demand that you provide some entertainment.
+d_waiterEE1 You juggle a couple balls, much to the delight of the drunken patrons.
+d_waiterEE2 You tell a few jokes. It's not hard to get such a sloshed audience to laugh, but it still is good practice.
+d_waiter2 You spend the week carousing, drinking, and having a good time. You feel better now, on multiple levels.
+d_waiter3 You decide that getting drunk right now won't be productive.
+d_scribe "Ah, citizen. I haven't seen you here before- oh, you must be a traveler then! Welcome to my town! I'm here enjoying the air."
+d_scribe1 The remarkably trusting mayor has you spend the week performing the duties of a scribe. You help copy proclamations, tally expenses, and talk to petitioners. The mayor is a cheapskate, but you still get a lot of experience.
+d_scribe2 You politely respond to him and leave.
+d_waiterE When cleaning up the bar, you notice something in a seat. Someone left their wallet behind!
+d_waiterE1A You root around in the wallet, but find it empty. You feel guilty for having tried.
+d_waiterE1B You empty out the wallet, and put the contents in your own. It makes you feel a little guilty, but it's worth it.
+d_waiterE2A After an hour or two of looking, you find the wallet's owner. He isn't rich enough to give you a reward, but he seems grateful.
+d_waiterE2B You spend several hours looking for the wallet's owner, but get nowhere. It doesn't feel worth it.
+d_scribeE While balancing the town hall's books, you begin to become tempted to fudge a few numbers. You could come out with some good money, and surely nobody would notice?
+d_scribeE1A You add a small expense into the middle of a table, and pocket that amount of money. Ah, white-collar crime.
+d_scribeE1B Your meddling, unfortunately, is caught before the week is up. You get docked a week of pay (for what little that matters), and get a stern talking to.
+d_scribeEE On your way to work one day, you encounter a protestor. He has a sign protesting tariffs on imports. Normally it wouldn't be your business, but he's blocking the door and does not seem interested in letting you in.
+d_scribeEE1 You muster all of the politeness you can. It takes a good ten minutes, but you convince him to leave.
+d_scribeEE2 You beat the shit out of the protestor. It's probably not a smart thing to do, but it's satisfying.
+d_scribeE2 You keep doing your job as ordered, feeling virtuous.
+d_prostM "You here for sex or what?"
+d_prostM1A You have a pretty good time. Hopefully you didn't get any diseases.
+d_prostM1B You have a pretty good time. You do catch a few disapproving looks though.
+d_prostM2 You decide you aren't that desperate.
+d_prostF "Hey sugar. Looking for a good time?"
+d_prostE You catch a disease...
+d_prostE1 You go and get medical treatment. It's a bit embarrassing to ask for, but it's better than wasting away from a disease.
+d_prostE2 You suffer the effects of the disease in silence. It is incredibly painful.
+d_prostE3 You really wish you could afford to treat this, but you can't.
+d_healer "Ah, welcome to my clinic. Are you here for healing? We also offer an experimental treatment program that should make you a lot tougher. Probably."
+d_healer1 You go through an agonizing week-long program of alchemical treatment, exercise, and tests. It's boring and painful, but you feel a lot tougher at the end.
+d_healerE In an unexpected reaction, you also feel a little bit stronger!
+d_healerEE In an unexpected reaction, you also feel a little bit more coordinated!
+d_healerEEE The treatment gives you a terrible fever, though.
+d_healerEEEE Actually, now you feel amazing overall. That treatment really agreed with you.
+d_healerEEEEE Those drugs made your head feel a bit clouded though.
+d_healerEEEEEE Those drugs made you feel a bit twitchy though.
+d_healer2 You don't need any healing.
+d_healer3 You quickly get patched up.
+d_masterPlur "You have %C weeks to prepare to explore %N!"
+d_masterSing "You'll be going to %N just next week!"
+d_masterFPlur "The Bloodcrafter will arrive in %C weeks!"
+d_masterFSing "The Bloodcrafter awaits! Get ready!"
+d_tutor "Hey there, youngster. The library isn't open for public use, but I can let you in if you are willing to pay to learn. For a warrior like you, there are many texts on exotic techniques. How about it?"
+d_tutor1 "Here's the techniques I can teach you. You can probably only remember one at a time, be warned."
+d_tutor2 You spend the week reading, learning, and memorizing. It's a workout for your mind.
+d_tutorE You learn about an interesting exercise technique, and give it a try. It's a useful addition to your routine!
+d_tutorEE You learn about a calming controlled breathing technique, and decide to start using it. You feel healthier.
+d_tutorEEE You learn about an exotic "yoga" technique, and give it a try. It's a useful addition to your routine!
+d_tutorEEEE You learn about a new self-actualization technique. You try it out and feel more confident.
+d_tutor3 You don't feel like learning, so you leave.
+d_finalChanceA "You have one last chance to shop before traveling to %N. Use it wisely."
+d_finalChanceB "You have one last chance to shop before the final battle. Use it wisely."
+d_finalWeapons "Here is the selection of weapons."
+d_finalArmor "Here is the selection of armors."
+d_finalSkills "Here is the selection of skills."
+d_finalEnd "Very well. Get ready."
+d_intro1 "Welcome, %A! Welcome to the Wizard Hunters!"
+d_intro2 "We hunt wizards!"
+d_intro3 "They're evil, shut up. Look, a few months from now, the Bloodcrafter killed everyone but me. In five months he'll be coming to this town."
+d_intro4 "Take this knife. Every month I'll send you off to a new dungeon to go get some money. Maybe kill some other wizards. In the meantime I'd reccomend looking around town for ways to prepare, get better weapons and armor. I can't give you any help because I'm just a poor old man, so, uh. Good luck."
+d_intro5 "Fine, be that way. The Bloodcrafter will be here, want it or not."
+/ dialogue choices
+o_intro1 Wizard Hunters?
+o_intro2 Why?
+o_intro3 So what do I have to do?
+o_intro4 Shut up.
+o_chest1 Keep the money.
+o_chest2 Donate the money.
+o_lockedChest1 Try to pick the lock.
+o_lockedChest2 Leave the chest alone.
+o_lostMerchant1 Try to guide him back.
+o_lostMerchant2 Back off.
+o_lostLady1 Help her.
+o_lostLady2 Don't help her just yet.
+o_medicalBox1 Use the supplies.
+o_medicalBox2 Hold off.
+o_fount1 Drink the water.
+o_fount2 Don't drink the water.
+o_fence1 I'll take a job.
+o_fenceEE1 Sell it yourself.
+o_fenceEE2 Fence it.
+o_fenceE1 Bribe them.
+o_fenceE2 Flee.
+o_fence2 Nevermind.
+o_fence3 Take the acrobatics training. (40G)
+o_dock1 Yes.
+o_dockE1 Take some for yourself.
+o_dockE2 Report it to the guards.
+o_dock2 No.
+o_dockEE1 Finish the job.
+o_dockEE2 Take a nap.
+o_guard1 Yes sir.
+o_guardE1 Continue chasing.
+o_guardE2 Try to help your partner.
+o_guard2 No thanks.
+o_guard3 I'm here for the program (50G)
+o_smith1 I'm here to shop.
+o_smithE1 Take the job.
+o_smithE2 Politely decline.
+o_smith2 I'm here to work.
+o_smithEE1 Dodge it.
+o_smithEE2 Catch it.
+o_smith3 Goodbye.
+o_tinker1 Let me see your stock.
+o_tinkerE1 Make a vicious knife using it.
+o_tinkerE2 Make a deadly axe using it.
+o_tinkerE3 Sell the design.
+o_tinkerEE1 Make a vicious bow using it.
+o_tinkerEE2 Make a deadly crossbow using it.
+o_tinkerEEEE1 Take out your anger.
+o_tinkerEEEE2 Calm yourself down.
+o_tinker2 Actually I'm here for work.
+o_tinker3 I don't need anything.
+o_waiter1 I'm here for work.
+o_waiterEE1 Juggle.
+o_waiterEE2 Tell jokes.
+o_waiter2 Prepare my tab. (60G)
+o_waiter3 I'm not thirsty, sorry.
+o_scribe1 Do you have any jobs?
+o_scribe2 Good day.
+o_waiterE1 Rifle through it.
+o_waiterE2 See if you can return it.
+o_scribeE1 Make the change.
+o_scribeE2 No way.
+o_scribeEE1 Talk him into leaving.
+o_scribeEE2 Beat him up.
+o_prost1 Hell yes. (50G)
+o_prost2 Please no.
+o_prostE1 Go get it treated. (30G)
+o_prostE2 Tough it out.
+o_healer1 Take the treatment. (60G)
+o_healer2 Leave.
+o_healer3 Get healed. (10G)
+o_tutor1 Learn a technique.
+o_tutor2 Get tutored. (60G)
+o_tutor3 Books are for losers.
+o_finalWeapons Buy weapons.
+o_finalArmor Buy armor.
+o_finalSkills Buy skills.
+o_finalEnd Done.
+/ weapon names
+w_generic weapon
+w_sword1 iron sword
+w_dagger1 iron dagger
+w_axe1 iron axe
+w_xbow1 iron crossbow
+w_bow1 iron bow
+w_stone throwing stones
+w_sword2 steel sword
+w_dagger2 steel dagger
+w_axe2 steel axe
+w_xbow2 steel crossbow
+w_bow2 steel bow
+w_knife throwing knives
+w_vibro vibrating knife
+w_chain rotating chain axe
+w_sword3 fine sword
+w_dagger3 fine dagger
+w_axe3 fine axe
+w_xbow3 fine crossbow
+w_bow3 fine bow
+w_disc throwing discs
+w_auto auto-crossbow
+w_bodkin bodkin bow
+/ armor names
+a_generic clothes
+a_light1 fur armor
+a_heavy1 iron breastplate
+a_light2 white fur armor
+a_heavy2 steel breastplate
+a_light3 leather armor
+a_heavy3 knight armor
+/ skill names
+s_generic skill
+s_slowArrow suppressing fire
+s_poisonedBlade poisoned blade
+s_immunity immunity
+s_bouncingArrow trick shot
+s_impact impacting blow
+s_adrenaline adrenaline rush
+s_weakenArrow vile arrows
+/ endings
+e_knight Knight
+e_knightD After the fight you are accepted into an honorable order of knights, in recognition of your accomplishment.
+e_mercenary Mercenary
+e_mercenaryD You go on to become a mercenary, selling your skills and your fearsome reputation to the highest bidder.
+e_tracker Tracker
+e_trackerD After the battle you leave to become a tracker in the wilderness, hunting monsters and saving innocents.
+e_thief Thief
+e_thiefD You go on to become a legendary thief, stealing your way to fortune.
+e_inventor Inventor
+e_inventorD After the battle you found a new workshop in another city, and become a well-known inventor.
+e_tinker Tinker
+e_tinkerD After the battle you return to the master tinker, and become his most valuable employee.
+e_noble Noble
+e_nobleD You go on to use your wealth and connections to obtain a noble title, and live a comfortable life of wealth and power.
+e_comedian Comedian
+e_comedianD You go on to become a successful comedian, exploiting your popularity in town.
+e_assistant Mayor
+e_assistantD After the battle the mayor requests you be his second-in-command, and you eventually work your way up to becoming mayor yourself.
+e_explorer Explorer
+e_explorerD After the battle you leave the town, to lead expeditions and explore uncharted lands around the world.
+e_soldier Soldier
+e_soldierD You go on to become a soldier, and survive many future wars.
+e_homeless Hobo
+e_homelessD You are popular enough around town to get medical care after losing, but never recover from the loss. You live the rest of your life as a homeless vagrant.
+e_corpse Corpse
+e_corpseD You were mortally wounded during the battle, and you weren't popular enough for the townsfolk to really bother trying to save you.
+e_coward Coward
+e_cowardD You flee from the battle in shame, never to return.
+e_none Nothing
+e_noneD You shouldn't be seeing this.
+/
+/
